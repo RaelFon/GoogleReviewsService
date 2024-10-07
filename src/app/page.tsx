@@ -1,9 +1,24 @@
-import Image from "next/image";
+import React, { useEffect } from "react";
+import api from "./api/api";
 
-export default function Home() {
+export default function App() {
+//   const [user, setUser] = useState();
+
+  // useEffect(() => {
+  //   api
+  //     .get("/users/get-all")
+  //     .then((response) => response.data)
+  //     .catch((err) => {
+  //       console.error("ops! ocorreu um erro" + err);
+  //     });
+  // }, []);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <h1>Ofrok</h1>
+    <div className="App">
+      <h1>Ofrok</h1>
+      
+      <p>Usuário:</p>
+      {/* <p>Biografia: {user?.bio}</p> */}
     </div>
   );
 }
